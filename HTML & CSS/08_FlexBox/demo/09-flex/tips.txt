@@ -1,0 +1,65 @@
+.container{
+  display: flex; inline-flex
+  ! how the container is positioned with the other elements
+  ! flex is block el, we can make it inline-flex if we are
+  gonna use it with other elements next to it
+
+  flex-direction: column; -> row (+ reverse)
+  !!! all the other options works based on the direction we had chosen
+
+  flex-wrap: nowrap(default); wrap, wrap-reverse
+  !!! again based on the direction(column or row) pushes el on new lines
+
+  justify-content: flex-start(default); flex-end, !!!center!!!,
+  !!! space-around, space-between, space-evenly!!!
+  ! try also with -> height: 500px;
+
+  align-items: center; -> used with justify-content center
+  calculates the exat center position automatically
+  ! the default value is "stretch"
+  !better understanding used with -> height: 500px;
+
+  align-content: center; flex-start...
+  !!! only works with -> flex-wrap: wrap;
+  ! for better understanding use with -> height: 500px; and-> align-items: center; 
+
+  gap: ; calculates automatically(best used with flex)
+  ! useful if we have "wrap" but don't have defined height of the container 
+}
+
+===============
+# flex children -> the parrent has display: flex; or inline-flex
+ and we can use it with wrap to choose where the el moves(put it between other elements when we shrink the browser, etc) 
+.item:nth-child(4){
+    order: 1; 
+    # the default value is 0 so everything different
+    than 0 will change the item power and move it based 
+    on the direction we had chosen
+}
+
+.item{
+    flex-shrink: 1; # the default value is 1 
+    and with 0 we turn it off
+
+    flex-grow: 0; # the default value is 0 
+    and with 1 we turn it on. Used to fill 
+    the empty space in the container(stretch the items)
+}
+
+.item:nth-child(4){
+    flex-shrink: 3; # used on a specific item we can increase 
+    the shrink speed with values higher than 1, 
+    while the other items can have their value set to 1
+
+    flex-grow: 1; # We can use it on specific item
+
+    !!! we can use width and height as usual but we have also ->
+    flex-basis: 150px;(depends on the direction again) and ->
+    flex: 0 1 auto; these are the default values
+    # flex-grow(0) -> flex-shrink(1) -> flex-basis(auto)
+
+    align-self: flex-start, stretch, center, etc;
+    # same as 'align-items:' for the whole container,
+    but for a single item in this case
+}
+

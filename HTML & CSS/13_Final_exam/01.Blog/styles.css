@@ -1,0 +1,98 @@
+html {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.content-box{
+    font-size: 10px;
+    width: 550px;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1.1fr 1.1fr 0.8fr;
+    gap: 16px;
+    background-color: #d7c49e;
+    grid-template-areas: 
+        "movie celebrity other"
+        "tv-show arts other";
+    padding: 24px;
+    margin: 100px auto;
+}
+
+img{
+    width: 172px;
+    height: 105px;
+}
+
+.music-box, .celebrity-box,
+.tv-show-box, .art-box{
+    background-color: #66545e;
+    color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.music-box{
+    grid-area: movie;
+}
+
+.music-box p{
+    padding: 3px;
+}
+
+.celebrity-box{
+    grid-area: celebrity;
+}
+
+.celebrity-box p{
+    padding: 3px;
+}
+
+.tv-show-box{
+    grid-area: tv-show;
+    
+}
+
+.tv-show-box p{
+    padding: 3px;
+}
+
+.art-box{
+    grid-area: arts;
+}
+
+.art-box p{
+    padding: 3px;
+}
+
+.side-nav{
+    grid-area: other;
+    color: #604f5b;
+    width: 70%;
+}
+
+.side-nav .nav-header{
+    /* font-weight: normal; */
+    padding-bottom: 6px;
+    font-size: 10px;
+}
+
+.side-nav .nav-info ul{
+    width: 100%;
+}
+
+.side-nav .nav-info li{
+    padding-bottom: 6px;
+}
+
+.side-nav .nav-info i{
+    padding-bottom: 6px;
+    padding: 3px;
+    background-color: #604f5b;
+    border-radius: 100px;
+    color: #d7c49e;
+    justify-content: center;
+    font-size: 6px;
+}
+
+

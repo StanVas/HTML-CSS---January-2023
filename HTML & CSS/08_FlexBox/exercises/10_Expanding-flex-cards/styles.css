@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    height: 300px;
+    gap: 12px;
+    width: 100vh;
+
+}
+
+.container img{
+    border-radius: 6px;
+    box-shadow: 1px 1px 100px 1px #888888;
+}
+
+.container .small{
+    width: 90px;
+    object-fit: cover;
+}
+
+.container .big{
+    width: 300px;
+    padding: 0 12px;
+    background-color: black;
+}

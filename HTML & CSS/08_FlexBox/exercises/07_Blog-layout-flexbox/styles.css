@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(238, 238, 238); */
+    padding: 18px 64px;
+    gap: 48px;
+}
+
+blockquote, h1, h2, h3{
+    font-family: Georgia, serif;
+}
+
+img{
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    margin: 0 24px;
+    border: 2px solid black;
+}
+
+.aside a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+.page .title{
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 18px;
+}
+
+.page .first-section{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.page .first-section .first-h2{
+    width: 100%;
+}
+
+.page .first-section .first-p{
+    width: 50%;
+}
+
+.page .first-section .first-img{
+    width: 25%;
+}
+
+.page .second_section{
+    display: inline-flex;
+    width: 70%;
+}
+
+.page .third-section{
+    display: inline-flex;
+    width: 70%;
+}
+
+.page .aside{
+    width: 15%;
+    display: inline-flex;
+    align-content: flex-start;
+    flex-direction: column;
+    padding-left: 18px;
+}
+
+
+.page .second-section{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 24px;
+}
+
+.page .second-section h2{
+    width: 100%;
+}
+
+.page .second-section .half-p{
+    width: 50%;
+    padding-right: 12px;
+}
+
+.page .second-section .blockquote{
+    border-left: 1px solid black;
+    width: 45%;
+    padding: 12px;
+}
+
+.page .second-section .blockquote .author{
+    text-align: end;
+    padding-top: 10px;
+}
+
+.page .third-section{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 24px;
+}
+
+.page .third-section h2{
+    width: 100%;
+}
+
+.page .third-section .half-p{
+    width: 50%;
+}

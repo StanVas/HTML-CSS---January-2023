@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+/* Layout Masonry */
+
+.masonry{
+    padding: 0px 256px;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    max-height: 1800px;
+    flex-direction: column;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.masonry .first-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: 260px;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+img{
+    overflow: hidden;
+    width: 260px;
+}
+
+.card p{
+    padding: 16px;
+}
+
+.card h3{
+    padding-left: 16px;
+}
+
+.card footer{
+    padding: 16px;
+    border-top: 1px solid gray;
+}
+
+.fst-title{
+    padding: 32px 256px;
+}
+
+.second-title{
+    padding: 32px 200px;
+}
+
+/* Layout Flex */
+
+.flex{
+    box-sizing: border-box;
+    padding: 0px 200px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    
+}
+
+.flex .flex-card{
+    align-self: stretch;
+}
+
+.flex .flex-card footer{
+    margin-top: auto;
+}
+
+.flex .flex-test1 .test1{
+    
+    margin-top: auto;
+}

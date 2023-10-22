@@ -1,0 +1,75 @@
+relative --->>>> absolute
+===================
+rem -> default font size of html is 16 so 1.2rem is 16*1.2 (better use thisone)
+em -> multiplies by the font size of his parrent
+
+===================
+
+ height: 100vh;  
+    /* 100% from our viewport(the hight of our browser) */
+
+===================
+
+.hero .hero__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+position: relative;
+    /* make the parent container position relative so the child can use absolute  */
+
+===================
+
+/* for more elements we can put them in a container
+like for example h1 and h2 and position the container */
+
+.hero .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+===================
+
+/* stylization the empty div */
+/* put it on top of the container and make it darker by 0.2 */
+.hero__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* second way is with opacity */
+    /* background-color: black;
+    opacity: 0.3; */
+
+===================
+
+/* before and after pseudo elements(we can use again for stylization) */
+/* first of all always make content-> if we don't need text just use "" */
+.hero::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.hero::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+===================
+
+
+
+
+
+
+
+
